@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SHREE DEVI INSTITUTE OF TECHNOLOGY"
+        android:textSize="35dp"
+        android:textColor="#021473"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imglogo"
+        app:layout_constraintTop_toTopOf="@id/imglogo"
+        app:layout_constraintBottom_toBottomOf="@id/imglogo"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="178dp"
+        android:layout_height="121dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:id="@+id/line1"
+       app:layout_constraintTop_toBottomOf="@id/imglogo"
+       android:background="@color/black"
+       android:layout_marginTop="10dp"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|italic"
+        android:text="Abhishek C Sreejith  "
+        android:textColor="#DC3A3C3C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/job"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|italic"
+        android:text="Developer  "
+        android:textColor="#DC3A3C3C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phno"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|italic"
+        android:text="+918129602918  "
+        android:textColor="#DC3A3C3C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/job"
+        />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/addr"
+    android:textSize="25dp"
+    android:layout_marginTop="10dp"
+    android:textStyle="bold|italic"
+    android:text="Kenjar, Manglore  "
+        android:textColor="#DC3A3C3C"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/phno"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mail"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|italic"
+        android:text="abhisree673@gmail.com  "
+        android:textColor="#DC3A3C3C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addr"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/website"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|italic"
+        android:text="www.abhisheksreejith.com  "
+        android:textColor="#DC3A3C3C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mail"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
